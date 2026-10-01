@@ -185,7 +185,7 @@ export default function GiftClient({ data }: Props) {
           <div className="crown-icon">👑</div>
           <div className="dots">• • •</div>
           <p className="description">
-            "Today is a day as beautiful as you are. I've prepared a little digital surprise to celebrate your special moment."
+            "I’ve prepared a little digital surprise to celebrate your special moment, i wish it makes you happy"
           </p>
           <button className="btn-primary" onClick={() => navigateTo('cake_lit')}>Open Your Surprise 🎁</button>
         </div>
@@ -238,19 +238,19 @@ export default function GiftClient({ data }: Props) {
       <div className={`screen ${screen === 'letter' ? 'visible' : ''}`}>
         <div className="content-wrapper">
           <div className="letter-card">
-            <div className="top-accent-sq"></div>
-            <h2 className="letter-title">To my favorite person,</h2>
+          
+            <h2 className="letter-title"></h2>
             
             <div className="letter-scroll-area">
               <div className="letter-body">{data.message}</div>
               <div className="letter-divider"><span>✦</span></div>
               <div className="signature">
-                <p>With all my love,</p>
-                <p>{data.senderName || 'Youssef'} ✨</p>
+                <p></p>
+                <p>{data.senderName || 'Youssef'} </p>
               </div>
             </div>
 
-            <button className="btn-primary" style={{ width: '100%' }} onClick={() => navigateTo('song')}>Hear our song →</button>
+            <button className="btn-primary" style={{ width: '100%' }} onClick={() => navigateTo('song')}>Celebrate your birthday →</button>
           </div>
         </div>
       </div>
@@ -275,8 +275,8 @@ export default function GiftClient({ data }: Props) {
 
               {/* المعلومات */}
               <div className="player-info">
-                <div className="player-title">Our Song</div>
-                <div className="player-artist">every word for you</div>
+                <div className="player-title">Birthday Song</div>
+                <div className="player-artist"></div>
               </div>
 
               {/* شريط الوقت */}
